@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Voluntários</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="corpo">
+        <section>
+            <h3>Gerenciamento de Voluntarios</h3>
+            <form id="formularioVoluntario">
+                <input type="hidden" id="idVoluntario">
+                <label for="nome">Nome do voluntário:</label>
+                <input type="text" id="nome" required>
+
+                <label for="areaInteresse">Área de interesse:</label>
+                <select id="areaInteresse" required>
+                    <option value="">Selecione sua área de interesse</option>
+                    <option value="Educação">Educação</option>
+                    <option value="Meio Ambiente">Meio Ambiente</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Logística">Logística</option>
+                </select>
+
+                <label for="numeroEventos">Número de eventos que deseja participar:</label>
+                <input type="number" id="numeroEventos" min="1" required>
+
+                <input type="checkbox" id="disponibilidadeFimSemana">
+                <label for="disponibilidadeFimSemana">Disponibilidade aos fins de semana?</label>
+
+                <button type="submit" id="btnRegistrar">Registrar Voluntário</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Lista De Voluntarios</h3>
+            <table id="tabelaVoluntarios">
+                <thead>
+                    <tr>
+                        <th>Voluntário</th>
+                        <th>Área</th>
+                        <th>Eventos</th>
+                        <th>Fins de Semana (Sim/Não)</th>
+                        <th>Envolvimento</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <footer>
+        <p>👥 Alunos: Felipe Tozadori Silva • </p>
+      </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
